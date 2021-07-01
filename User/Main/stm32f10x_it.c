@@ -1,5 +1,4 @@
-/**
-  ******************************************************************************
+/********************************************************************************
   * @file    Project/STM32F10x_StdPeriph_Template/stm32f10x_it.c 
   * @author  MCD Application Team
   * @version V3.5.0
@@ -158,3 +157,4 @@ void SysTick_Handler(void)
 
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+

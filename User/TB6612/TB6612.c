@@ -1,5 +1,5 @@
 #include "TB6612.h"
-#include "bsp_GeneralTim_3.h" 
+#include "GeneralTimer_3.h"
 #include "stm32f10x.h"
 
 
@@ -125,3 +125,4 @@ void Car_Stop(void)
 	PWMB_STOP();
 	PWMB_STOP();
 }
+
