@@ -7,6 +7,7 @@
                 "d:\\001_Main\\010_STM32_单轮驱动小车\\Libraries\\STM32F10x_StdPeriph_Driver\\inc",
                 "d:\\001_Main\\010_STM32_单轮驱动小车\\User\\Main",
                 "d:\\001_Main\\010_STM32_单轮驱动小车\\User\\Usart",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\User\\Find_Num",
                 "D:\\017_Keil_MDK-ARM_V5.26\\ARM\\ARMCC\\include",
                 "D:\\017_Keil_MDK-ARM_V5.26\\ARM\\ARMCC\\include\\rw",
                 "d:\\001_Main\\010_STM32_单轮驱动小车\\Libraries\\CMSIS\\startup",

@@ -30,3 +30,4 @@
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 ..\output\main.o: ..\User\Usart\Usart.h
 ..\output\main.o: D:\017_Keil_MDK-ARM_V5.26\ARM\ARMCC\Bin\..\include\stdio.h
+..\output\main.o: ..\User\Find_Num\Find_Num.h

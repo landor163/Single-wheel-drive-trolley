@@ -370,7 +370,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User\Main;..\User\Usart</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User\Main;..\User\Usart;..\User\Find_Num</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -572,6 +572,11 @@
               <FileName>Usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Usart\Usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>Find_Num.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Find_Num\Find_Num.c</FilePath>
             </File>
           </Files>
         </Group>
