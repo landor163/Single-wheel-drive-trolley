@@ -18,7 +18,7 @@ int main(void )
 
         //test_led = LED_1_out;
 
-        GENERAL_ccr4_Mode_Config(10);
+        //GENERAL_ccr4_Mode_Config(10);
     }
 }
 
