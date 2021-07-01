@@ -3,15 +3,15 @@
         {
             "name": "STM32_StandardLibrary",
             "includePath": [
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\Libraries\\CMSIS",
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\Libraries\\STM32F10x_StdPeriph_Driver\\inc",
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\User\\Main",
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\User\\Usart",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\Libraries\\CMSIS",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\Libraries\\STM32F10x_StdPeriph_Driver\\inc",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\User\\Main",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\User\\Usart",
                 "D:\\017_Keil_MDK-ARM_V5.26\\ARM\\ARMCC\\include",
                 "D:\\017_Keil_MDK-ARM_V5.26\\ARM\\ARMCC\\include\\rw",
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\Libraries\\CMSIS\\startup",
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
-                "c:\\Users\\landor\\Desktop\\STM32_单轮驱动小车\\Doc"
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\Libraries\\CMSIS\\startup",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
+                "d:\\001_Main\\010_STM32_单轮驱动小车\\Doc"
             ],
             "defines": [
                 "STM32F10X_MD",
