@@ -370,7 +370,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User\Main;..\User\Usart;..\User\Find_Num</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User\Main;..\User\Usart;..\User\Find_Num;..\User\GeneralTimer_3</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -577,6 +577,11 @@
               <FileName>Find_Num.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Find_Num\Find_Num.c</FilePath>
+            </File>
+            <File>
+              <FileName>GeneralTimer_3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\GeneralTimer_3\GeneralTimer_3.c</FilePath>
             </File>
           </Files>
         </Group>
