@@ -4,6 +4,7 @@
 #include "Find_Num.h"
 #include "GeneralTimer_3.h"
 #include "TB6612.h"
+#include "Switch.h"
 
 
 int test_led;
@@ -31,7 +32,9 @@ int main(void )
 
         //GENERAL_ccr4_Mode_Config(10);
 
-        AIN1_ON;
+        AIN1_OFF;
+        CIN1_OFF;
+        CIN2_OFF;
     }
 }
 

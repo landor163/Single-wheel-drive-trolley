@@ -6,9 +6,9 @@
 #include "GeneralTimer_3.h"
 
 
-/*B6端口*/
-#define AIN1_GPIO_PIN		GPIO_Pin_6
-#define AIN1_GPIO_PORT  	GPIOB
+/*A4端口*/
+#define AIN1_GPIO_PIN		GPIO_Pin_4
+#define AIN1_GPIO_PORT  	GPIOA
 #define AIN1_GPIO_CLK		RCC_APB2Periph_GPIOB
 
 /*输出高电平*/
@@ -50,9 +50,9 @@
 #define BIN2_OFF		GPIO_ResetBits(BIN2_GPIO_PORT,BIN2_GPIO_PIN)
 
 
-/*B8端口*/
-#define CIN1_GPIO_PIN		GPIO_Pin_8
-#define CIN1_GPIO_PORT	    GPIOB
+/*A5端口*/
+#define CIN1_GPIO_PIN		GPIO_Pin_5
+#define CIN1_GPIO_PORT	    GPIOA
 #define CIN1_GPIO_CLK		RCC_APB2Periph_GPIOB
 
 /*输出高电平*/
@@ -61,9 +61,9 @@
 #define CIN1_OFF		GPIO_ResetBits(CIN1_GPIO_PORT,CIN1_GPIO_PIN)
 
 
-/*B9端口*/
-#define CIN2_GPIO_PIN		GPIO_Pin_9
-#define CIN2_GPIO_PORT	    GPIOB
+/*A8端口*/
+#define CIN2_GPIO_PIN		GPIO_Pin_8
+#define CIN2_GPIO_PORT	    GPIOA
 #define CIN2_GPIO_CLK		RCC_APB2Periph_GPIOB
 
 /*输出高电平*/

@@ -33,3 +33,4 @@
 ..\output\main.o: ..\User\Find_Num\Find_Num.h
 ..\output\main.o: ..\User\GeneralTimer_3\GeneralTimer_3.h
 ..\output\main.o: ..\User\TB6612\TB6612.h
+..\output\main.o: ..\User\Switch\Switch.h
