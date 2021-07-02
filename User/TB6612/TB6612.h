@@ -3,10 +3,11 @@
 
 
 #include "stm32f10x.h"
+#include "GeneralTimer_3.h"
 
 
-/*B0端口*/
-#define AIN1_GPIO_PIN		GPIO_Pin_0
+/*B6端口*/
+#define AIN1_GPIO_PIN		GPIO_Pin_6
 #define AIN1_GPIO_PORT  	GPIOB
 #define AIN1_GPIO_CLK		RCC_APB2Periph_GPIOB
 
@@ -49,21 +50,35 @@
 #define BIN2_OFF		GPIO_ResetBits(BIN2_GPIO_PORT,BIN2_GPIO_PIN)
 
 
+/*B8端口*/
+#define CIN1_GPIO_PIN		GPIO_Pin_8
+#define CIN1_GPIO_PORT	    GPIOB
+#define CIN1_GPIO_CLK		RCC_APB2Periph_GPIOB
+
+/*输出高电平*/
+#define CIN1_ON			GPIO_SetBits(CIN1_GPIO_PORT,CIN1_GPIO_PIN)
+/*输出低电平*/
+#define CIN1_OFF		GPIO_ResetBits(CIN1_GPIO_PORT,CIN1_GPIO_PIN)
+
+
+/*B9端口*/
+#define CIN2_GPIO_PIN		GPIO_Pin_9
+#define CIN2_GPIO_PORT	    GPIOB
+#define CIN2_GPIO_CLK		RCC_APB2Periph_GPIOB
+
+/*输出高电平*/
+#define CIN2_ON			GPIO_SetBits(CIN2_GPIO_PORT,CIN2_GPIO_PIN)
+/*输出低电平*/
+#define CIN2_OFF		GPIO_ResetBits(CIN2_GPIO_PORT,CIN2_GPIO_PIN)
+
+
 void AIN1_GPIO_Config(void);
 void AIN2_GPIO_Config(void);
 
 void BIN1_GPIO_Config(void);
 void BIN2_GPIO_Config(void);
 
+void CIN1_GPIO_Config(void);
+void CIN2_GPIO_Config(void);
 
-void PWMA_UP(int a);
-void PWMA_BACK(int a);
-void PWMA_STOP(void);
-void PWMB_UP(int a);
-void PWMB_BACK(int a);
-void PWMB_STOP(void);
-
-void Car_Fore(int a);
-void Car_Back(int a);
-void Car_Stop(void);
 #endif

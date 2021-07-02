@@ -32,3 +32,4 @@
 ..\output\main.o: D:\017_Keil_MDK-ARM_V5.26\ARM\ARMCC\Bin\..\include\stdio.h
 ..\output\main.o: ..\User\Find_Num\Find_Num.h
 ..\output\main.o: ..\User\GeneralTimer_3\GeneralTimer_3.h
+..\output\main.o: ..\User\TB6612\TB6612.h

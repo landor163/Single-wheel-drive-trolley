@@ -1,6 +1,4 @@
 #include "TB6612.h"
-#include "GeneralTimer_3.h"
-#include "stm32f10x.h"
 
 
 void AIN1_GPIO_Config(void)
@@ -55,74 +53,29 @@ void BIN2_GPIO_Config(void)
 	GPIO_Init(BIN2_GPIO_PORT,&GPIO_InitStruct);
 }
 
-
-/*
-以L298N的方向为前，以主控板的方向为后
-AIN是左边的轮子
-1 OFF  2 ON是前进
-1 ON   2OFF是后退
-BIN是右边的轮子
-1 ON   2OFF是前进
-1 OFF  2 ON是后退
-*/
-
-void PWMA_UP(int a)
+void CIN1_GPIO_Config(void)
 {
-	GENERAL_ccr1_Mode_Config(a);//A6
-	AIN1_OFF;//B0
-	AIN2_ON;//B1
+	GPIO_InitTypeDef		GPIO_InitStruct;
+
+	RCC_APB2PeriphClockCmd(CIN1_GPIO_CLK,ENABLE);
+	
+	GPIO_InitStruct.GPIO_Pin = CIN1_GPIO_PIN;
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;//推挽输出
+	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+	
+	GPIO_Init(CIN1_GPIO_PORT,&GPIO_InitStruct);
 }
 
-void PWMA_BACK(int a)
+void CIN2_GPIO_Config(void)
 {
-	GENERAL_ccr1_Mode_Config(a);//A6
-	AIN1_ON;//B0
-	AIN2_OFF;//B1
-}
+	GPIO_InitTypeDef		GPIO_InitStruct;
 
-void PWMA_STOP(void)
-{
-	GENERAL_ccr1_Mode_Config(0);//A6
-	AIN1_ON;//B0
-	AIN2_ON;//B1
-}
-
-void PWMB_UP(int a)
-{
-	GENERAL_ccr2_Mode_Config(a);//A6
-	BIN1_ON;//B0
-	BIN2_OFF;//B1
-}
-
-void PWMB_BACK(int a)
-{
-	GENERAL_ccr2_Mode_Config(a);//A6
-	BIN1_OFF;//B0
-	BIN2_ON;//B1
-}
-
-void PWMB_STOP(void)
-{
-	GENERAL_ccr2_Mode_Config(0);//A6
-	BIN1_ON;//B0
-	BIN2_ON;//B1
-}
-
-void Car_Fore(int a)
-{
-	PWMA_UP(a);
-	PWMB_UP(a);
-}
-
-void Car_Back(int a)
-{
-	PWMA_BACK(a);
-	PWMB_BACK(a);
-}
-
-void Car_Stop(void)
-{
-	PWMB_STOP();
-	PWMB_STOP();
+	RCC_APB2PeriphClockCmd(CIN2_GPIO_CLK,ENABLE);
+	
+	GPIO_InitStruct.GPIO_Pin = CIN2_GPIO_PIN;
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;//推挽输出
+	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+	
+	GPIO_Init(CIN2_GPIO_PORT,&GPIO_InitStruct);
 }
 
