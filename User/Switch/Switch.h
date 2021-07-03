@@ -15,7 +15,7 @@
 
 #define    SWITCH3_GPIO_CLK    RCC_APB2Periph_GPIOC
 #define    SWITCH3_GPIO_PORT   GPIOB		   
-#define    SWITCH3_GPIO_PIN    GPIO_Pin_0
+#define    SWITCH3_GPIO_PIN    GPIO_Pin_5
 //按键按下为高电平，如下；反之，互换；
 #define SWITCH1_ON	1
 #define SWITCH1_OFF	0
