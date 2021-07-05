@@ -1,2 +1,3 @@
 电机驱动问题蛮大~
-频率和周期还是需要好好调试一下子。
+Encoder_Left
+Encoder_Right

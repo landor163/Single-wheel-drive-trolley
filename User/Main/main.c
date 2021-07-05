@@ -7,12 +7,9 @@
 #include "Switch.h"
 
 
-int test_led;
-
-
 int main(void )
 {
-	USART_Config();
+    USART_Config();
 
     Find_Nun_Init();
 
@@ -24,17 +21,11 @@ int main(void )
     BIN2_GPIO_Config();
     CIN1_GPIO_Config();
     CIN2_GPIO_Config();
+
+    SWITCH_GPIO_Config();
     while(1)
     {
-        //printf("Usart Test. \n");
-
-        //test_led = LED_1_out;
-
-        //GENERAL_ccr4_Mode_Config(10);
-
-        AIN1_OFF;
-        CIN1_OFF;
-        CIN2_OFF;
+        
     }
 }
 

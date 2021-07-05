@@ -1,23 +1,31 @@
+/*
+@接线说明：
+		SW1 接 A0 ;
+		SW2 接 C13 ;
+		SW3 接 B5 ;
+*/
+
+
 #include "Switch.h"
 
 
-void SWITCH1_GPIO_Config(void)
+void SWITCH_GPIO_Config(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	
-	RCC_APB2PeriphClockCmd( SWITCH1_GPIO_CLK | SWITCH2_GPIO_CLK | SWITCH3_GPIO_CLK ,ENABLE);
+	RCC_APB2PeriphClockCmd(SWITCH1_GPIO_CLK|SWITCH2_GPIO_CLK|SWITCH3_GPIO_CLK,ENABLE);
 	//Switch1
-	GPIO_InitStructure.GPIO_Pin= SWITCH1_GPIO_PIN ; 
+	GPIO_InitStructure.GPIO_Pin=SWITCH1_GPIO_PIN ; 
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING ;		//设置为 浮空输入
-	GPIO_Init( SWITCH1_GPIO_PORT ,&GPIO_InitStructure);
+	GPIO_Init(SWITCH1_GPIO_PORT,&GPIO_InitStructure);
 	//Switch2
-	GPIO_InitStructure.GPIO_Pin= SWITCH2_GPIO_PIN ; 
+	GPIO_InitStructure.GPIO_Pin=SWITCH2_GPIO_PIN ; 
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING ; 
-	GPIO_Init( SWITCH2_GPIO_PORT ,&GPIO_InitStructure);	
+	GPIO_Init(SWITCH2_GPIO_PORT,&GPIO_InitStructure);	
     //Switch3
-    GPIO_InitStructure.GPIO_Pin= SWITCH3_GPIO_PIN ; 
+    GPIO_InitStructure.GPIO_Pin=SWITCH3_GPIO_PIN ; 
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING ; 
-	GPIO_Init( SWITCH3_GPIO_PORT ,&GPIO_InitStructure);	
+	GPIO_Init(SWITCH3_GPIO_PORT,&GPIO_InitStructure);	
 }
 
 /*

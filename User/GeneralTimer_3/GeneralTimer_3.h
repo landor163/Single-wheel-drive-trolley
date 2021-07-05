@@ -8,7 +8,7 @@
 #define            GENERAL_TIM                   TIM3
 #define            GENERAL_TIM_APBxClock_FUN     RCC_APB1PeriphClockCmd
 #define            GENERAL_TIM_CLK               RCC_APB1Periph_TIM3
-#define            GENERAL_TIM_Period            1   //定时器周期；设定自动重载寄存器的值；范围为 0 - 65535；
+#define            GENERAL_TIM_Period            1      //定时器周期；设定自动重载寄存器的值；范围为 0 - 65535；
 #define            GENERAL_TIM_Prescaler         71     //预分频器；范围为 0 - 65535 ，实现 1 - 65536 分频；
 
 //输出比较通道 1
@@ -23,7 +23,7 @@
 #define            GENERAL_TIM_CH3_GPIO_CLK      RCC_APB2Periph_GPIOB
 #define            GENERAL_TIM_CH3_PORT          GPIOB
 #define            GENERAL_TIM_CH3_PIN           GPIO_Pin_0
-//输出比较通道 4
+//输出比较通道 4 未使用
 #define            GENERAL_TIM_CH4_GPIO_CLK      RCC_APB2Periph_GPIOB
 #define            GENERAL_TIM_CH4_PORT          GPIOB
 #define            GENERAL_TIM_CH4_PIN           GPIO_Pin_1
