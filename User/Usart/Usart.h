@@ -32,5 +32,7 @@ void Usart_SendHalfWord(USART_TypeDef * pUSARTx,uint16_t ch);
 int fputc(int ch,FILE *f);
 int fgetc(FILE *f);
 
+void Openmv_Receive_Data(int16_t com_data);
+
 #endif /*Usart_H*/
 

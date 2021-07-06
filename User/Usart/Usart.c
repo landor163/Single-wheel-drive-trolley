@@ -2,6 +2,11 @@
 @接线说明：
 		TX 接 A09 ；
 		RX 接 A10 ；
+@通信注释：
+		变量 Cx 为 去掉帧头帧尾后的；
+		0 为 除了黑色、红色 以外的所有情况；
+		1 为 看到红灯；
+		识别到门框的偏移量；
 */
 
 
@@ -117,5 +122,84 @@ int fgetc(FILE *f)
     while(USART_GetFlagStatus(DEBUG_USARTx,USART_FLAG_RXNE)==RESET);
 
     return(int)USART_ReceiveData(DEBUG_USARTx);
+}
+
+//USART1 全局中断服务函数；
+void Openmv_Receive_Data(int16_t com_data)
+{
+	u8 i;
+
+	static u8  RxCounter1=0;
+	static u16 RxBuffer1[7]={0};
+	static u8  RxState=0;
+	static u8  RxFlag1=0;
+
+	if(RxState==0 && com_data==0x2C)//0x2c帧头；
+	{
+		RxState=1;
+
+		RxBuffer1[RxCounter1++]=com_data;
+	}
+	else if(RxState==1 && com_data==0x12)//0x12针尾；
+			{
+				RxState=2;
+
+				RxBuffer1[RxCounter1++]=com_data;
+			}
+			else if(RxState==2)
+			{
+				RxBuffer1[RxCounter1++]=com_data;
+
+				if(RxCounter1>=7 || com_data==0x5E)       //RxBuffer1 接收满了，接收数据结束；
+				{
+					RxState=3;
+					RxFlag1=1;
+
+					Cx=(uint8_t)(RxBuffer1[RxCounter1-2]);
+					//Cy=RxBuffer1[RxCounter1-4];
+					//Cw=RxBuffer1[RxCounter1-3];
+					//Ch=RxBuffer1[RxCounter1-2];
+				}
+			}
+			else if(RxState==3)//检测 是否 接收到 结束标志；
+			{
+				if(RxBuffer1[RxCounter1-1] == 0x5E)
+				{
+					USART_ITConfig(USART1,USART_IT_RXNE,DISABLE);//关中断；
+
+					if(RxFlag1)
+					{
+						//OLED_Refresh();
+						//OLED_ShowNum(0, 0,Cx,2,16,1);
+						//OLED_ShowNum(0,17,Cy,3,16,1);
+						//OLED_ShowNum(0,33,Cw,3,16,1);
+						//OLED_ShowNum(0,49,Ch,3,16,1);
+					}
+					RxFlag1=0;
+					RxCounter1=0;
+					RxState=0;
+					USART_ITConfig(USART1,USART_IT_RXNE,ENABLE);
+				}
+				else//接受错误；
+				{
+					RxState=0;
+					RxCounter1=0;
+
+					for(i=0;i<7;i++)
+					{
+						RxBuffer1[i]=0x00;//将存放数据数组清零；
+					}
+				}
+			} 
+			else//接收异常；
+			{
+				RxState=0;
+				RxCounter1=0;
+
+				for(i=0;i<7;i++)
+				{
+					RxBuffer1[i]=0x00;//将存放数据数组清零；
+				}
+			}	
 }
 

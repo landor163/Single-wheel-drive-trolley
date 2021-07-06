@@ -158,3 +158,15 @@ void SysTick_Handler(void)
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
 
+void USART1_IRQHandler(void)
+{
+  uint8_t com_data;
+  if( USART_GetITStatus(USART1,USART_IT_RXNE)!=RESET)  	   //½ÓÊÕÖÐ¶Ï  
+  {
+				USART_ClearITPendingBit(USART1,USART_IT_RXNE);   //Çå³ýÖÐ¶Ï±êÖ¾
+
+				com_data = USART_ReceiveData(USART1);
+				Openmv_Receive_Data(com_data);
+  }
+}
+
