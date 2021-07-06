@@ -5,6 +5,7 @@
 #include "GeneralTimer_3.h"
 #include "TB6612.h"
 #include "Switch.h"
+#include "Encoder.h"
 
 
 int main(void )

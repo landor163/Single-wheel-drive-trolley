@@ -370,7 +370,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User\Main;..\User\Usart;..\User\Find_Num;..\User\GeneralTimer_3;..\User\TB6612;..\User\Switch</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\User\Main;..\User\Usart;..\User\Find_Num;..\User\GeneralTimer_3;..\User\TB6612;..\User\Switch;..\User\Encoder</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -592,6 +592,11 @@
               <FileName>Switch.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Switch\Switch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Encoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Encoder\Encoder.c</FilePath>
             </File>
           </Files>
         </Group>
