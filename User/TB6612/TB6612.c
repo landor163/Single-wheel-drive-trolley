@@ -90,3 +90,68 @@ void CIN2_GPIO_Config(void)
 	GPIO_Init(CIN2_GPIO_PORT,&GPIO_InitStruct);
 }
 
+void Motor_A_UP(int x)//左前轮子
+{
+	GENERAL_ccr1_Mode_Config(x);
+	AIN1_ON;
+	AIN2_OFF;
+}
+
+void Motor_A_BACK(int x)//左前轮子
+{
+	GENERAL_ccr1_Mode_Config(x);
+	AIN1_OFF;
+	AIN2_ON;
+}
+
+void Motor_A_STOP(void)//左前轮子
+{
+	GENERAL_ccr1_Mode_Config(0);
+	AIN1_OFF;
+	AIN2_OFF;
+}
+
+
+void Motor_B_UP(int x)//右前轮子
+{
+	GENERAL_ccr2_Mode_Config(x);
+	BIN1_OFF;
+	BIN2_ON;
+}
+
+void Motor_B_BACK(int x)//右前轮子
+{
+	GENERAL_ccr2_Mode_Config(x);
+	BIN1_ON;
+	BIN2_OFF;
+}
+
+void Motor_B_STOP(void)//右前轮子
+{
+	GENERAL_ccr2_Mode_Config(0);
+	BIN1_OFF;
+	BIN2_OFF;
+}
+
+
+void Motor_C_UP(int x)//后面轮子
+{
+	GENERAL_ccr3_Mode_Config(x);
+	CIN1_OFF;
+	CIN2_ON;
+}
+
+void Motor_C_BACK(int x)//后面轮子
+{
+	GENERAL_ccr3_Mode_Config(x);
+	CIN1_ON;
+	CIN2_OFF;
+}
+
+void Motor_C_STOP(void)//后面轮子
+{
+	GENERAL_ccr3_Mode_Config(0);
+	CIN1_OFF;
+	CIN2_OFF;
+}
+

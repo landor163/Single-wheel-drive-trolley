@@ -698,7 +698,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x60B0EE5F)
-F (..\User\Main\main.c)(0x60E3A8B0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+F (..\User\Main\main.c)(0x60E50A3B)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x60B0EE5F)
 I (..\Libraries\CMSIS\core_cm3.h)(0x60B0EE5F)
 I (D:\017_Keil_MDK-ARM_V5.26\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -731,7 +731,7 @@ I (..\User\Usart\Usart.h)(0x60E3B3ED)
 I (D:\017_Keil_MDK-ARM_V5.26\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\User\Find_Num\Find_Num.h)(0x60E45103)
 I (..\User\GeneralTimer_3\GeneralTimer_3.h)(0x60E3CB7A)
-I (..\User\TB6612\TB6612.h)(0x60E2C75C)
+I (..\User\TB6612\TB6612.h)(0x60E50869)
 I (..\User\Switch\Switch.h)(0x60E2C80C)
 I (..\User\Encoder\Encoder.h)(0x60D6967B)
 F (..\User\Main\stm32f10x_it.c)(0x60E3CA8D)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
@@ -766,7 +766,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x60B0EE5F)
 I (..\User\Usart\Usart.h)(0x60E3B3ED)
 I (D:\017_Keil_MDK-ARM_V5.26\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
-F (..\User\Usart\Usart.c)(0x60E451CF)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\usart.o --omf_browse ..\output\usart.crf --depend ..\output\usart.d)
+F (..\User\Usart\Usart.c)(0x60E4F83E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\usart.o --omf_browse ..\output\usart.crf --depend ..\output\usart.d)
 I (..\User\Usart\Usart.h)(0x60E3B3ED)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x60B0EE5F)
 I (..\Libraries\CMSIS\core_cm3.h)(0x60B0EE5F)
@@ -857,8 +857,8 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x60B0EE5F)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x60B0EE5F)
-F (..\User\TB6612\TB6612.c)(0x60E2C5CE)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\tb6612.o --omf_browse ..\output\tb6612.crf --depend ..\output\tb6612.d)
-I (..\User\TB6612\TB6612.h)(0x60E2C75C)
+F (..\User\TB6612\TB6612.c)(0x60E50A15)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User\Main -I..\User\Usart -I..\User\Find_Num -I..\User\GeneralTimer_3 -I..\User\TB6612 -I..\User\Switch -I..\User\Encoder-I d:\001_Main\010_STM32_单轮驱动小车\Project\RTE-I D:\017_Keil_MDK-ARM_V5.26\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\017_Keil_MDK-ARM_V5.26\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\output\tb6612.o --omf_browse ..\output\tb6612.crf --depend ..\output\tb6612.d)
+I (..\User\TB6612\TB6612.h)(0x60E50869)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x60B0EE5F)
 I (..\Libraries\CMSIS\core_cm3.h)(0x60B0EE5F)
 I (D:\017_Keil_MDK-ARM_V5.26\ARM\ARMCC\include\stdint.h)(0x599EDB3E)

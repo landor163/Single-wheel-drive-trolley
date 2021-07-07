@@ -75,4 +75,15 @@ void BIN2_GPIO_Config(void);
 void CIN1_GPIO_Config(void);
 void CIN2_GPIO_Config(void);
 
+void Motor_A_UP(int x);
+void Motor_A_BACK(int x);
+void Motor_A_STOP(void);
+
+void Motor_B_UP(int x);
+void Motor_B_BACK(int x);
+void Motor_B_STOP(void);
+
+void Motor_C_UP(int x);
+void Motor_C_BACK(int x);
+void Motor_C_STOP(void);
 #endif
