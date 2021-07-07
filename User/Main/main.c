@@ -26,6 +26,10 @@ int main(void )
     SWITCH_GPIO_Config();
     while(1)
     {
+        if(SWITCH1_Scan(SWITCH1_GPIO_PORT,SWITCH1_GPIO_PIN)==SWITCH1_ON)		//当检测到 KEY1 被按下
+        {
+            Motor_A_UP(50);
+        }
         
     }
 }

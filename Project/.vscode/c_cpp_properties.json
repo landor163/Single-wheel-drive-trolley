@@ -19,7 +19,7 @@
                 "d:\\001_Main\\010_STM32_单轮驱动小车\\Doc"
             ],
             "defines": [
-                "STM32F10X_MD",
+                "STM32F10X_HD",
                 "USE_STDPERIPH_DRIVER",
                 "__CC_ARM",
                 "__arm__",
