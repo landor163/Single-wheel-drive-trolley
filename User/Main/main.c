@@ -15,7 +15,7 @@ int main(void )
     Find_Nun_Init();
 
     GENERAL_TIM_Init();
-
+    
     AIN1_GPIO_Config();
     AIN2_GPIO_Config();
     BIN1_GPIO_Config();
@@ -24,12 +24,10 @@ int main(void )
     CIN2_GPIO_Config();
 
     SWITCH_GPIO_Config();
+	
+	GENERAL_ccr3_Mode_Config(50);
     while(1)
     {
-        if(SWITCH1_Scan(SWITCH1_GPIO_PORT,SWITCH1_GPIO_PIN)==SWITCH1_ON)		//当检测到 KEY1 被按下
-        {
-            Motor_A_UP(50);
-        }
         
     }
 }
